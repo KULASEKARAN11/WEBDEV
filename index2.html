@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <button type="button" onclick="f1()">Click Me</button>
+    <button type="button" onclick="window.print()">Print current page</button>
+    <script>
+        let x=2;
+        document.getElementById("p1").innerHTML="Hi from inner HTML";
+        document.write("Only for testing purposes use document.write()");
+        
+        function f1()
+        {
+           // window.alert("Using windows.alert() ");  //Can skip windows. as window is a global scope object
+            alert("Using windows.alert() ");
+        }
+    </script>
+</body>
+</html>
